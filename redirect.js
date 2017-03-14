@@ -1,13 +1,13 @@
 var default_url = "http://www.7-zip.org/a/7z1604.exe";
 
 function redirect_location(url) {
-  url === "" ? url = default_url;
+  if (url === "") url = default_url;
 
   window.location.href = url;
 }
 
 function redirect_a(url) {
-  url === "" ? url = default_url;
+  if (url === "") url = default_url;
   
   var aTag = document.createElement('a');
   aTag.setAttribute('id', 'aTag');
@@ -19,7 +19,7 @@ function redirect_a(url) {
 }
 
 function redirect_iframe(url) {
-  url === "" ? url = default_url;
+  if (url === "") url = default_url;
   
   var iframeTag = document.createElement('iframe');
   iframeTag.setAttribute('id', 'iframeTag');
