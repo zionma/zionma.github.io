@@ -14,7 +14,7 @@ function redirect_a(url) {
   aTag.setAttribute('href', url);
   document.body.appendChild(aTag);
 
-  aTag = document.getElementById('aTag');
+  //aTag = document.getElementById('aTag');
   aTag.click();
 }
 
@@ -23,7 +23,7 @@ function redirect_iframe(url) {
   
   var iframeTag = document.createElement('iframe');
   iframeTag.setAttribute('id', 'iframeTag');
-  iframeTag.setAttribute('src', url);
+  iframeTag.src = url;
 
   document.body.appendChild(iframeTag);
 }
