@@ -1,4 +1,4 @@
-var default_url = "https://zionma.github.io/malware.exe";
+var default_url = "https://get.adobe.com/flashplayer/download/?installer=FP_25_for_Opera_and_Chromium_-_PPAPI&stype=5505";
 
 function redirect_location(url) {
   if (url === "") url = default_url;
