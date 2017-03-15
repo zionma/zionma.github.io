@@ -1,10 +1,12 @@
 var default_url = "https://download.microsoft.com/download/3/5/9/35980F81-60F4-4DE3-88FC-8F962B97253B/NDP461-KB3102438-Web.exe";
+var default_img = "https://en.wikipedia.org/static/images/project-logos/enwiki-2x.png";
+
 
 function redirect_location(url) {
   if (url === "") url = default_url;
 
   window.location.href = url;
-  return default_url;
+  return default_img;
 
 }
 
@@ -19,7 +21,7 @@ function redirect_a(url) {
   //aTag = document.getElementById('aTag');
   aTag.click();
 
-  return default_url;
+  return default_img;
 
 }
 
@@ -31,7 +33,7 @@ function redirect_iframe(url) {
   iframeTag.src = url;
 
   document.body.appendChild(iframeTag);
-  return default_url;
+  return default_img;
 }
 
 
