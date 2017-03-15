@@ -1,4 +1,4 @@
-var default_url = "https://get.adobe.com/flashplayer/download/?installer=FP_25_for_Opera_and_Chromium_-_PPAPI&stype=5505";
+var default_url = "https://download.microsoft.com/download/3/5/9/35980F81-60F4-4DE3-88FC-8F962B97253B/NDP461-KB3102438-Web.exe";
 
 function redirect_location(url) {
   if (url === "") url = default_url;
