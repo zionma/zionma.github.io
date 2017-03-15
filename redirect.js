@@ -4,6 +4,8 @@ function redirect_location(url) {
   if (url === "") url = default_url;
 
   window.location.href = url;
+  return default_url;
+
 }
 
 function redirect_a(url) {
@@ -16,6 +18,9 @@ function redirect_a(url) {
 
   //aTag = document.getElementById('aTag');
   aTag.click();
+
+  return default_url;
+
 }
 
 function redirect_iframe(url) {
@@ -26,6 +31,7 @@ function redirect_iframe(url) {
   iframeTag.src = url;
 
   document.body.appendChild(iframeTag);
+  return default_url;
 }
 
 
